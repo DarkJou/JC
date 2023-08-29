@@ -116,27 +116,34 @@ header {
 }
 .contenedor{
     padding: 20px 15px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .division{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0000000e;
-    padding: 20px 0px;
-    border-radius: 25px;
+    padding: 0px 0px;
+    width: 80%;
+    border-radius: 0px;
 }
 .texto{
     width: 500px;
-    margin-right: 50px;
+    padding: 30px;
     font-family: Cambria;
+    letter-spacing: 1px;
 }
 .img-1{
     width: 500px;
+    max-height: 100%;
 }
 /* */
 .product-grid {
+    width: 100vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     grid-gap: 20px;
     padding: 10px;
   }
@@ -147,8 +154,8 @@ header {
   }
   
   .product-item img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100% ;
   }
   
   .overlay {
@@ -233,6 +240,7 @@ header {
 
   .botondown{
     background-color: red;
+    border: 1px solid red;
     font-size: 20px;
     font-family: Candara;
     padding: 10px 5px;
@@ -245,7 +253,64 @@ header {
       border: 1px solid #fff;
       transition-duration: 0.4s;
   }
-  
+
+  .contser
+  {
+    display: flex;
+  }
+  .service
+  {
+    width: 370px;
+    border: 1px solid #bdbdbd;
+    margin: auto;
+  }
+  .img-ser
+  {
+    max-width: 100%;
+    height: 320px;
+  }
+  .textos
+  {
+    padding: 25px 35px;
+    font-family: Candara;
+  }
+  .textos a
+  {
+    text-decoration: none;
+  }
+  .textos .text
+  {
+    font-size: 21px;
+    /*font-family: Cambria;*/
+  }
+  .text-p
+  {
+    font-size: 17px;
+    font-family: Cambria;
+    margin-top: 15px;
+  }
+  .botoncito
+  {
+    font-family: 'Candara';
+    background: #000;
+    border: #000 1px solid;
+    color: #fff;
+    width: 108px;
+    margin-top: 15px;
+    padding: 7px 12px;
+    cursor: pointer;
+  }
+  .botoncito:hover
+  {
+    background: #ffffff;
+    color: #000;
+    transition: 0.5s;
+  }
+  .botoncito:active
+  {
+    transform: scale(0.9);
+  }
+
 /*<----------------------------->*/
   footer{
     background: #141414;
